@@ -112,3 +112,5 @@ s="abcdefghij"
 my_slice = slice (1,8,2)
 print(s[my_slice]) # slice(1,8,2) means start=1, end=8, step=2. So output is 'bdfh'.
 
+
+
