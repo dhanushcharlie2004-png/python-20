@@ -149,3 +149,62 @@ print(student1)
 student1["place"]="karur"
 print(student1)
 #{'name': 'kumar', 'age': 23, 'course': 'fullstack', 'place': 'karur'}
+
+
+#LIST EXAMPLE PROGRAM
+mylist=["apple","orange","banana"]
+print(mylist)
+#['apple', 'orange', 'banana']
+print(mylist.append("grapes"))
+#None
+print(mylist)
+#['apple', 'orange', 'banana', 'grapes']
+
+print(mylist[1])
+#orange
+print(mylist[2])
+#banana
+mylist[1]="gova"
+print(mylist)
+#['apple', 'gova', 'banana', 'grapes']
+
+
+#TUPLE EXAMPLE PROGRAM
+
+colors=("red","blue","green","red")
+print(colors)
+#('red', 'blue', 'green', 'red')
+print(colors[0])
+#red
+print(colors[1])
+#blue
+print(colors.count("red"))
+#2
+print(colors.index("blue"))
+#1
+
+#SET EXAMPLE PROGRAM
+a={1,2,3,4}
+b={5,6,3,2}
+
+print(a.union(b))  # ONLY UNIQUE VALUE SHOW
+#{1, 2, 3, 4, 5, 6}
+print(a.intersection(b)) # ONLY DUPLICATE VALUE SHOW
+#{2, 3}
+
+
+#DICTIONARY EXAMPLE PROGRAM
+student = {
+    "name": "Dhanush",
+    "age": 21,
+    "course": "Python"
+}
+
+print(student)
+print(student["name"])
+print(student["age"])
+
+student["age"] = 22
+student["city"] = "Chennai"
+
+print(student)
