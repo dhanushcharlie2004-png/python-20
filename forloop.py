@@ -95,3 +95,101 @@ for i in mylist:
     if i==6:
         break
     print(i)
+
+
+#question 8
+text = "Python Programming"    # count vowels letters
+count=0
+for i in text:
+    if i.lower() in "aeiou":
+        count +=1
+print("vowels letters:",count)
+
+text = "Python Programming"    # vowels letters print agum
+count=0
+for i in text:
+    if i.lower() in "aeiou":
+        print(i)
+
+#question 9
+total=0
+for i in range(1,21):
+    total=total+i
+    print("sum:",total)
+
+#question 10
+numbers = [12, 7, 8, 15, 20, 33, 44, 9] 
+even=0
+odd=0
+for i in numbers:     #(count odd and even numbers)
+    if i%2==0:
+        even+=1
+    else:
+        odd+=1
+print("even:",even)
+#even: 4
+print("odd:",odd)
+#odd: 4
+
+numbers = [12, 7, 8, 15, 20, 33, 44, 9]  
+even=0
+odd=0
+for i in numbers:        # print odd numbers
+    if i%2==0:
+        print(i) 
+# 12
+# 8
+# 20
+# 44
+
+numbers = [12, 7, 8, 15, 20, 33, 44, 9]
+even=0
+odd=0
+for i in numbers:       # print even numbers 
+    if i%2!=0:
+        print(i)    
+# 7
+# 15
+# 33
+# 9
+
+#question 11
+num=7
+for i in range (1,11):    #output : 1*7=7 ..... 10*7=70
+   print(i,"*7=",i*7)
+
+#question 12
+
+numbers = [10, 25, 40, 15, 40, 30, 40, 5]
+largest=numbers[0]
+count=0
+for i in numbers:      #findthe largest numbers
+    if i>largest:
+        largest=i
+
+for i in numbers:
+    if i==largest:    # count the largest numbers
+        count+=1
+
+print("largest:",largest)
+print("count:", count)
+
+
+#question 13
+
+numbers=[10,30,50,80,40,80,15]
+largest=numbers[0]
+count=0
+for i in numbers:
+    if i>largest:
+        largest=i
+
+        
+for i in numbers:
+    if i == largest:
+        count+=1  
+print ("largest:",largest)
+#largest: 80
+print("count:", count)
+#count: 2
+

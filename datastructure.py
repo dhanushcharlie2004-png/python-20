@@ -164,7 +164,7 @@ print(mylist[1])
 #orange
 print(mylist[2])
 #banana
-mylist[1]="gova"
+mylist[1]="gova"    # replace the value for index 1
 print(mylist)
 #['apple', 'gova', 'banana', 'grapes']
 
