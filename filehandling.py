@@ -70,24 +70,37 @@ with open ("raj.txt",'r') as file:    # READLINE means read only first line.
 with open("raj.txt",'r') as file:
       print(file.readlines())
 
-#output:(readlines)
-#[' i completed my BE degree\n', 'i am raj kumar\n', 'i am from karur\n']
+# output:(readlines)
+# [' i completed my BE degree\n', 'i am raj kumar\n', 'i am from karur\n']
 
+# Assignment:
 
-      with open("raj.txt",'w') as file:
+with open("raj.txt",'w') as file:
             for i in range(1,101):
                   file.write(f"this line {i}\n")
 
-      with open("raj.txt",'r') as file:
+with open("raj.txt",'r') as file:
             lines=file.readlines()
+            lines.insert(52,"this dmeo purpose\n")
+            print(lines)
 
-      lines.insert(52,"this dmeo purpose\n")
-
-      with open("raj.txt",'w') as file:
+with open("raj.txt",'w') as file:
             file.writelines(lines)   # writelines ( updated list-ah file-ah save pannum)
 
-      with open("raj.txt",'r') as file:  
+with open("raj.txt",'r') as file:  
             lines=file.readlines()
             print("total lines:", len(lines))   # len(lines) means count the lines
 
-      
+
+#ANOTHER METHOD 
+
+# with open("ashiq.txt",'w') as file:
+#         for i in range(1,101) :
+#                 if i==55:
+#                         file.write("this demo purpose\n")
+#                 else:
+#                        file.write(f"this is line{i}\n") 
+            
+# with open("ashiq.txt",'r') as file:
+#         lines=file.readlines()
+#         print(lines)
